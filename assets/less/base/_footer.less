@@ -1,0 +1,130 @@
+.footer {
+    background-color: @bg-footer;
+    // footer-top
+    & .footer-top {
+        padding-top: 50px;
+        padding-bottom: 46px;
+        // footer-top-logo
+        & .footer-top-logo {
+            // width: 22.5%;
+            & .footer-top-logo-inner {
+                
+            }
+        }
+        // end footer-top-logo
+        // footer-top-navbar
+        & .footer-top-navbar {
+            // width: 47.5%;
+            padding-top: 86px;
+            & ul {
+                display: flex;
+                width: 100%;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                & li {
+                    padding: 18px;
+                    letter-spacing: 1px;
+                    & .footer-top-navbar-a-inner {
+                        color: @text-detail-strength-color;
+                        text-transform: uppercase;
+                        font-family: 'FiraSans';
+                        font-weight: 600;
+                        font-size: 1.4rem;
+                    }
+                    & .footer-top-navbar-a-inner--active {
+                        color: @text-banner-price-color;
+                    }
+                }
+            }
+        }
+        // end footer-top-navbar
+        // footer-top-sub
+        & .footer-top-sub {
+            // width: 100%;
+            // position: relative;
+            // margin: 0 0 0 0;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 79px;
+            & .footer-top-sub-a-inner {
+                font-family: 'FiraSans';
+                font-weight: 600;
+                font-size: 1.4rem;
+                color: @text-detail-strength-color;
+                text-transform: uppercase;
+                border: 1px solid @summary-text-color; 
+                padding: 8px 20px;
+                // position: absolute;
+                // bottom: 4%;
+                // right: 0;
+                letter-spacing: 2px;
+                & .footer-top-sub-icon-inner {
+                    color: @text-banner-price-color;
+                    padding-left: 10px;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        // end footer-top-sub
+    }
+    // end footer-top
+    // footer-bottom
+    & .footer-bottom {  
+        & .footer-bottom-border-top {
+            border-top: 1px solid @footer-bottom-border-top;   
+            margin: 0;
+        }      
+        // footer-bottom-contact        
+        & .footer-bottom-contact {
+            // width: 47.5%;         
+            padding-top: 45px;   
+            // footer-bottom-contact-address-inner
+            & .footer-bottom-contact-address-inner {
+                font-family: 'FiraSans';
+                font-weight: 400;
+                font-size: 1.4rem;
+                color: @summary-text-color;
+            }
+            // end footer-bottom-contact-address-inner
+            // footer-bottom-contact-copyright-inner
+            & .footer-bottom-contact-copyright-inner {
+                font-family: 'FiraSans';
+                font-weight: 400;
+                font-size: 1.4rem;
+                color: @summary-text-color;
+                padding-top: 11px;
+                padding-bottom: 80px;
+            }
+            // end footer-bottom-contact-copyright-inner
+        }
+        // end footer-bottom-contact
+        // footer-bottom-socialnetwork
+        & .footer-bottom-socialnetwork {
+            // width: 47.5%;
+            display: flex;
+            justify-content: flex-end;
+            & ul {
+                display: flex;
+                & li {
+                    & .footer-bottom-socialnetwork-a-inner {
+                        & .footer-bottom-socialnetwork-icon-inner {
+                            border: 1px solid @icon-footer-socialnetwork;
+                            border-radius: 50%;
+                            color: @text-detail-strength-color;
+                            font-size: 1.8rem;
+                            margin: 15px 5px;
+                            padding: 14px 14px;
+                        }
+                        & .footer-bottom-socialnetwork-icon-inner--active {
+                            background-color: @main-color;
+                            color: @bg-footer;
+                        }
+                    }
+                }
+            }
+        }
+        // end footer-bottom-socialnetwork
+    }
+    // end footer-bottom
+}
